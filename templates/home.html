@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Welcome to the Online Learning Platform</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body, h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #dde7a1; 
+            font-family: Arial, sans-serif;
+        }
+    
+        .advanced-heading {
+            text-align: center;
+            background-color: #d9f009;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 15px;
+            color: rgb(202, 7, 23);
+        }
+        .container {
+            margin-top: 20px;
+        }
+        .card {
+            border: none;
+            border-radius: 15px;
+            background-color: #fff; 
+            transition: transform 0.2s;
+            margin: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+        }
+    
+        .card:hover {
+            transform: scale(1.03);
+        }
+    
+        
+        .card-img-top {
+            max-width: 100%;
+            height: auto;
+        }
+    
+    
+        .card-title {
+            text-align: center;
+            font-size: 24px; 
+        }
+    
+        
+        .btn-primary {
+            background-color: #0ce4d2;
+            color: rgb(12, 12, 12); 
+            border: none;
+        }
+    
+        .btn-primary:hover {
+            background-color: #083644;
+        }
+    
+        .btn-success {
+            background-color: #ebe730; 
+            color: rgb(15, 14, 14);
+            border: none;
+        }
+    
+        .btn-info {
+            background-color: #23e2c9; 
+            color: #fff;
+            border: none;
+        }
+    
+        footer {
+            background-color: #d9f009;
+            color: rgb(202, 7, 23);
+            padding: 20px;
+            text-align: center;
+        }
+
+    </style>
+    
+</head>
+
+<body>
+    <div class="container mt-4">
+        <div class="advanced-heading">
+            <h2 class="text-center font-weight-bold">Welcome to the Online Learning Platform</h2>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://media.istockphoto.com/id/1393379238/photo/work-performance-is-influenced-by-skills-abilities-and-competence-the-concept-of-the.webp?b=1&s=170667a&w=0&k=20&c=d0GkROVP2_iWdPoqlERy12O1mZRG6dQ6iiERVQsAhk8="
+                        class="card-img-center" alt="Sign Up">
+                    <div class="card-body">
+                        
+                        <a href="{{ url_for('signup') }}" class="btn btn-primary btn-block">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row mt-3 justify-content-center">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://media.istockphoto.com/id/1332642788/photo/young-female-student-reading-book-or-document-outdoor.webp?b=1&s=170667a&w=0&k=20&c=tAsgk7kXONqy3BWlo2tpn_Sq1USHuemQRViBfRSME4k=" class="card-img-top mx-auto d-block" alt="Student Login" style="width: 300px; height: 200px;">
+                <div class="card-body">
+                    <h3 class="card-title text-center">Teacher Login</h3>
+                    <a href="{{ url_for('teacher_login') }}" class="btn btn-success btn-block">Login</a>
+                </div>
+            </div>
+        </div>
+      
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://media.istockphoto.com/id/1487304004/photo/notebook-study-education-book-learn-pen-pencil-pencil-box-pencil-case-stationery.webp?b=1&s=170667a&w=0&k=20&c=tW8_5XEJn3iWjx9wNM29b-U7-tRX07OVPX_gWiMhFbA=" class="card-img-top mx-auto d-block" alt="Teacher Login" style="width: 300px; height: 200px;">
+                <div class="card-body">
+                    <h3 class="card-title text-center">Student Login</h3>
+                    <a href="{{ url_for('student_login') }}" class="btn btn-info btn-block">Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    </div>
+
+    <footer>
+        &copy; Jay Shankar Aradhya
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
